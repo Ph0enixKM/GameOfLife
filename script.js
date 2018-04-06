@@ -112,9 +112,8 @@ next.addEventListener("click",update)
 canvas.addEventListener("mousedown", e => {
   let loc = {
     x : Math.floor( (e.x-canvas.offsetLeft) / res ),
-    y : Math.floor( (e.y-canvas.offsetTop) / res )
+    y : Math.floor( (e.y-canvas.offsetTop+window.pageYOffset) / res )
   }
-
 
   matrix[loc.x][loc.y] = +!matrix[loc.x][loc.y]
 
