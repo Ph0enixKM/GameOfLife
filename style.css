@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  text-align: center;
+  user-select: none;
+}
+p {
+  font-family: "Open Sans", Verdana, sans-serif;
+  color: #222;
+}
+canvas {
+  border: 1px solid black;
+}
+button {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 10px;
+  background-color: #ddd;
+  border: 2px #aaa;
+  cursor: pointer;
+  color: #222;
+  transition: 200ms;
+  outline: none;
+}
+button:hover{
+  background-color: #aaa;
+}
+button:active{
+  background-color: #999;
+}
